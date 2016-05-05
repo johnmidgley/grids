@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1462408885924">{:repl-history {:ide [], :local [&quot;false?&quot; &quot;(+)&quot; &quot;cdsf&quot; &quot;(1)&quot; &quot;(foo 1)&quot; &quot;(board 7 7)&quot; &quot;(board 1 2)&quot; &quot;(board 10 10\n       )&quot; &quot;(board 2 2\n       )&quot; &quot;(use clojure.repl)&quot; &quot;(require clojure.repl)&quot; &quot;(require 'clojure.repl)&quot; &quot;(use 'clojure.repl)&quot; &quot;(pp)&quot; &quot;(board 1 1\n       )&quot; &quot;(board 10 10)&quot; &quot;(board 5 5)&quot; &quot;(clojure.repl/pp)&quot;], :remote []}}</component>
+</project>
