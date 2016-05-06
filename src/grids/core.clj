@@ -5,19 +5,13 @@
    :cols cols
    :pieces (vec (repeat rows (vec (repeat cols nil))))})
 
-(defn position [row col]
-  {:row row
-   :col col})
-
-(defn row [pos]
-  (:row pos))
-
-(defn col [pos]
-  (:col pos))
+(defn piece [board pos]
+  (let [[row col] pos]
+    (get-in board [:pieces row col])))
 
 (defn valid-pos? [board pos]
   (let [{:keys [rows cols]} board
-        {:keys [row col]} pos]
+        [row col] pos]
     (and (>= row 0)
          (< row rows)
          (>= col 0)
@@ -25,7 +19,7 @@
 
 (defn place [board pos val]
   (if (valid-pos? board pos)
-    (let [{:keys [row col]} pos]
+    (let [[row col] pos]
       (assoc-in board [:pieces row col] val))))
 
 
@@ -35,6 +29,8 @@
    :left [0 -1]
    :right [0 1]})
 
+(defn step [dir pos]
+  (mapv + (directions dir) pos))
 
 (defn goal? [board]
   (let [pieces (:pieces board)]
@@ -44,15 +40,17 @@
               count))))
 
 ; Using specter would make this more elegant.
-(defn seek [board pos dir])
+(defn seek [board pos dir]
+  (when (valid-pos? board pos)
+    (if (piece board pos)
+      pos
+      (seek board (step dir pos) dir))))
 
 (defn valid-move? [board pos dir]
-  (let [{:keys [rows cols pieces]} board
-        {:keys [row col]} pos]
-    (and (get-in pieces [row col]))))
+  (let [{:keys [rows cols pieces]} board]
+    (and (get-in pieces pos))))
 
 (defn valid-moves [board]
-  (let [{:keys [rows cols pieces]} board]
-    ))
+  (let [{:keys [rows cols pieces]} board]))
 
 
