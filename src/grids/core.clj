@@ -13,13 +13,17 @@
          (>= col 0)
          (< col cols))))
 
-(defn place [board pos val]
+(defn set-at [board pos val]
   (if (valid-pos? board pos)
     (let [[row col] pos]
       (assoc-in board [:pieces row col] val))))
 
 (defn get-at [board pos]
   (get-in (:pieces board) pos))
+
+(defn remove-at [board pos]
+  [(get-at board pos)
+   (set-at board pos nil)])
 
 (defn positions [board]
   (let [{:keys [rows cols]} board]
@@ -39,8 +43,13 @@
 (def directions
   (keys steps))
 
-(defn step [dir pos]
-  (mapv + (steps dir) pos))
+(defn step-forward [dir pos]
+  (when (and dir pos)
+    (mapv + pos (steps dir))))
+
+(defn step-backward [dir pos]
+  (when (and dir pos)
+    (mapv - pos (steps dir))))
 
 (defn goal? [board]
   (let [pieces (:pieces board)]
@@ -54,18 +63,48 @@
   (when (valid-pos? board pos)
     (if (get-at board pos)
       pos
-      (seek board (step dir pos) dir))))
+      (seek board (step-forward dir pos) dir))))
 
 (defn valid-move? [board pos dir]
   (and (get-at board pos)
-       (let [adj (step dir pos)]
+       (let [adj (step-forward dir pos)]
          (and (not (get-at board adj))
-              (seek board (step dir adj) dir)))))
+              (seek board (step-forward dir adj) dir)))))
 
 (defn valid-moves [board]
-  (for [pos (occupied-positions board)
-        dir directions
-        :when (valid-move? board pos dir)]
-    [pos dir]))
+  (when board
+    (for [pos (occupied-positions board)
+          dir directions
+          :when (valid-move? board pos dir)]
+      [pos dir])))
+
+(defn move [board pos dir]
+  (if (valid-move? board pos dir)
+    (loop [b board
+           p pos]
+      (let [[v b] (remove-at b p)
+            t (seek b (step-forward dir p) dir)
+            dst (step-backward dir t)]
+        (if dst
+          (recur (set-at b dst v) t)
+          b)))))
+
+(defn play [board]
+  (let [moves (valid-moves board)]
+    (cond (goal? board) []
+          (empty? moves) nil
+          :else
+          (for [m moves]
+            (let [[p d] m
+                  r (move board p d)
+                  s (play r)]
+              (when s
+                (println s)
+                (conj s m)))))))
 
 
+(def b
+  (-> (board 10 10)
+      (set-at [0 0] 1)
+      (set-at [0 3] 2)
+      (set-at [0 4] 3)))
