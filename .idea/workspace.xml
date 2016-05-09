@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9b7198a-568b-4612-8566-b73539635936" name="Default" comment="Got valid moves working">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+    <list default="true" id="e9b7198a-568b-4612-8566-b73539635936" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grids.iml" afterPath="$PROJECT_DIR$/grids.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/grids/core.clj" afterPath="$PROJECT_DIR$/src/grids/core.clj" />
     </list>
     <ignored path="grids.iws" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/grids/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -101,7 +98,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="ReplState" timestamp="1462670336233">{:repl-history {:ide [], :local [&quot;false?&quot; &quot;(+)&quot; &quot;cdsf&quot; &quot;(1)&quot; &quot;(foo 1)&quot; &quot;(board 7 7)&quot; &quot;(board 1 2)&quot; &quot;(board 10 10\n       )&quot; &quot;(board 2 2\n       )&quot; &quot;(use clojure.repl)&quot; &quot;(require clojure.repl)&quot; &quot;(require 'clojure.repl)&quot; &quot;(use 'clojure.repl)&quot; &quot;(board 1 1\n       )&quot; &quot;(board 10 10)&quot; &quot;(clojure.repl/pp)&quot; &quot;(mapv + [1 2] [3 4\n               ])&quot; &quot;(board 5 5)&quot; &quot;(board 5 5\n       )&quot; &quot;(def b (board 7 7))&quot; &quot;(def b (place b [0 0] 1\n              ))&quot; &quot;(piece b [0 0])&quot; &quot;(step :up [0 0])&quot; &quot;(step :up [1 1])&quot; &quot;(seek b [5 0] :up)&quot; &quot;(seek b [5 3\n         ] :up)&quot; &quot;(seek b [5 0] :left)&quot; &quot;(seek b [0 1] :left)&quot; &quot;get&quot; &quot;(place b 0 3 1)&quot; &quot;(place b [0 3] 1)&quot; &quot;(def  b (place b [0 3] 1))&quot; &quot;(pp)&quot; &quot;(valid-move? b [0 0] :down)&quot; &quot;(positions b)&quot; &quot;(get-at b [0 0])&quot; &quot;(get-in b [0 0])&quot; &quot;(occupied-positions b)&quot; &quot;(seek b [0 0] :rght)&quot; &quot;(seek b [0 0] :rghft)&quot; &quot;(seek b [0 0] :right)&quot; &quot;(seek b [0 1] :right)&quot; &quot;(seek b [0 4] :right)&quot; &quot;(def b (place b [0 0] 1))&quot; &quot;(def b (place b [0 3] 1))&quot; &quot;(valid-move? b [0 0] :right)&quot; &quot;(valid-move? b [0 2] :right)&quot; &quot;(valid-move? b [0 3] :right)&quot; &quot;(valid-move? b [0 3] :left)&quot; &quot;(valid-moves b)&quot; &quot;(goal? b)&quot; &quot;(step-forward :up [0 0])&quot; &quot;(step-forward :up nil)&quot; &quot;(remove-at b [0 0])&quot; &quot;(def b (board 10 10))&quot; &quot;(set-at b [0 0 ] 1)&quot; &quot;(def b (set-at b [0 0] 1))&quot; &quot;(def b (set-at b [0 3] 1))&quot; &quot;b&quot; &quot;+&quot; &quot;(move b [0 0] :right)&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1462775603959">{:repl-history {:ide [], :local [&quot;false?&quot; &quot;(+)&quot; &quot;cdsf&quot; &quot;(1)&quot; &quot;(foo 1)&quot; &quot;(board 7 7)&quot; &quot;(board 1 2)&quot; &quot;(board 10 10\n       )&quot; &quot;(board 2 2\n       )&quot; &quot;(use clojure.repl)&quot; &quot;(require clojure.repl)&quot; &quot;(require 'clojure.repl)&quot; &quot;(use 'clojure.repl)&quot; &quot;(board 1 1\n       )&quot; &quot;(board 10 10)&quot; &quot;(clojure.repl/pp)&quot; &quot;(mapv + [1 2] [3 4\n               ])&quot; &quot;(board 5 5)&quot; &quot;(board 5 5\n       )&quot; &quot;(def b (place b [0 0] 1\n              ))&quot; &quot;(piece b [0 0])&quot; &quot;(step :up [0 0])&quot; &quot;(step :up [1 1])&quot; &quot;(seek b [5 0] :up)&quot; &quot;(seek b [5 3\n         ] :up)&quot; &quot;(seek b [5 0] :left)&quot; &quot;(seek b [0 1] :left)&quot; &quot;get&quot; &quot;(place b 0 3 1)&quot; &quot;(place b [0 3] 1)&quot; &quot;(def  b (place b [0 3] 1))&quot; &quot;(pp)&quot; &quot;(valid-move? b [0 0] :down)&quot; &quot;(positions b)&quot; &quot;(get-at b [0 0])&quot; &quot;(get-in b [0 0])&quot; &quot;(occupied-positions b)&quot; &quot;(seek b [0 0] :rght)&quot; &quot;(seek b [0 0] :rghft)&quot; &quot;(seek b [0 0] :right)&quot; &quot;(seek b [0 1] :right)&quot; &quot;(seek b [0 4] :right)&quot; &quot;(def b (place b [0 0] 1))&quot; &quot;(def b (place b [0 3] 1))&quot; &quot;(valid-move? b [0 0] :right)&quot; &quot;(valid-move? b [0 2] :right)&quot; &quot;(valid-move? b [0 3] :right)&quot; &quot;(valid-move? b [0 3] :left)&quot; &quot;(step-forward :up [0 0])&quot; &quot;(step-forward :up nil)&quot; &quot;(remove-at b [0 0])&quot; &quot;(def b (board 10 10))&quot; &quot;(set-at b [0 0 ] 1)&quot; &quot;+&quot; &quot;(def r (move b [0 0] :right))&quot; &quot;r&quot; &quot;(remove-at b [0 3])&quot; &quot;\n\n(move b [0 0] :right)&quot; &quot;\n\n\n(move b [0 0] :right)&quot; &quot;\n\n\n(move b [0 0] :up)&quot; &quot;(conj [0 1] [])&quot; &quot;(conj []  [0 1])&quot; &quot;(goal? b)&quot; &quot;(valid-moves b)&quot; &quot;(move b [0 0] :right)&quot; &quot;(first (play b))&quot; &quot;(goal? nil)&quot; &quot;(valid-moves nil)&quot; &quot;(conj nil [])&quot; &quot;(when nil (println \&quot;hi\&quot;))&quot; &quot;(conj [] nil)&quot; &quot;(println nil)&quot; &quot;\n(play b)&quot; &quot;(def b (board 7 7))&quot; &quot;(def b (set-at [0 0] 1))&quot; &quot;(def b (set-at b [0 0] 1))&quot; &quot;(def b (set-at b [0 3] 1))&quot; &quot;(def b (set-at b [0 6] 1))&quot; &quot;(play b)&quot; &quot;(def b (remove-at [6 6\n                   ]))&quot; &quot;(def b (remove-at [6 6]))&quot; &quot;(def b (remove-at b [6 6]))&quot; &quot;(def b (remove-at b [0 6]))&quot; &quot;(def b (remove-at b [0 5]))&quot; &quot;(get-at b [0 6])&quot; &quot;(:pieces b)&quot; &quot;b&quot; &quot;(keys b)&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -387,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1462649066841</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Closer">
+      <created>1462670346801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1462670346801</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -406,7 +410,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.50555557" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50416666" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -419,7 +423,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987952" sideWeight="0.49444443" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -441,12 +445,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Got seek working" />
     <MESSAGE value="Got valid moves working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got valid moves working" />
+    <MESSAGE value="Closer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="7" />
         </breakpoint>
@@ -2521,16 +2526,55 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/lang/AFn.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="440" column="5" selection-start-line="440" selection-start-column="5" selection-end-line="440" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="470">
+          <caret line="429" column="58" selection-start-line="429" selection-start-column="58" selection-end-line="429" selection-end-column="58" />
+          <folding>
+            <marker date="1462340439000" expanded="false" signature="0:104" placeholder="/.../" />
+            <marker date="1462340439000" expanded="false" signature="136:295" placeholder="..." />
+            <marker date="1462340439000" expanded="true" signature="357:364" placeholder="{...}" />
+            <marker date="1462340439000" expanded="false" signature="390:401" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="422:428" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="451:462" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="476:482" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="510:521" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="547:553" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="592:603" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="629:635" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="687:698" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="724:730" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="795:806" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="832:838" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="916:927" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="953:959" placeholder=" }" />
+            <marker date="1462340439000" expanded="false" signature="1050:1061" placeholder=" { " />
+            <marker date="1462340439000" expanded="false" signature="1087:1093" placeholder=" }" />
+            <marker date="1462340439000" expanded="true" signature="1198:1240" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="1358:1400" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="1531:1573" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="1717:1759" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="1917:1960" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="2132:2175" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="2361:2404" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="2604:2647" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="2861:2904" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="3132:3175" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="3417:3460" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="3716:3759" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="4029:4072" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="4356:4399" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="4697:4740" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="5054:5097" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="5139:5274" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="5338:23404" placeholder="{...}" />
+            <marker date="1462340439000" expanded="true" signature="23442:23565" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/grids/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+        <state relative-caret-position="170">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
           <folding />
         </state>
       </provider>
