@@ -94,13 +94,13 @@
     (cond (goal? board) []
           (empty? moves) nil
           :else
-          (filter some?
-                  (for [m moves]
-                    (let [[p d] m
-                          r (move board p d)
-                          s (play r)]
-                      (when s
-                        (conj s m))))))))
+          (not-empty (filter some?
+                             (for [m moves]
+                               (let [[p d] m
+                                     r (move board p d)
+                                     s (play r)]
+                                 (when s
+                                   (conj s m)))))))))
 (def b
   (-> (board 8 7)
       (set-at [0 3] 1)
@@ -115,12 +115,12 @@
 
 (def b
   (-> (board 8 7)
-      (set-at [4 0] 1)
-      (set-at [4 1] 1)
-      (set-at [4 2] 1)
-      (set-at [4 3] 1)
-      (set-at [4 4] 1)
-      (set-at [4 6] 1)
-      (set-at [6 0] 1)
-      (set-at [6 6] 1)
-      (set-at [7 5] 1)))
+      (set-at [0 3] 1)
+      (set-at [1 1] 1)
+      (set-at [1 3] 1)
+      (set-at [2 0] 1)
+      (set-at [2 2] 1)
+      (set-at [2 6] 1)
+      (set-at [3 0] 1)
+      (set-at [3 1] 1)
+      (set-at [5 4] 1)))
