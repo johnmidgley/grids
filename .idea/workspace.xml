@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9b7198a-568b-4612-8566-b73539635936" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/grids/core.clj" afterPath="$PROJECT_DIR$/src/grids/core.clj" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/grids/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+            <state relative-caret-position="395">
+              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -53,6 +54,13 @@
         <option value="$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/lang/Numbers.class" />
         <option value="$PROJECT_DIR$/src/grids/core.clj" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -98,7 +106,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="ReplState" timestamp="1462775603959">{:repl-history {:ide [], :local [&quot;false?&quot; &quot;(+)&quot; &quot;cdsf&quot; &quot;(1)&quot; &quot;(foo 1)&quot; &quot;(board 7 7)&quot; &quot;(board 1 2)&quot; &quot;(board 10 10\n       )&quot; &quot;(board 2 2\n       )&quot; &quot;(use clojure.repl)&quot; &quot;(require clojure.repl)&quot; &quot;(require 'clojure.repl)&quot; &quot;(use 'clojure.repl)&quot; &quot;(board 1 1\n       )&quot; &quot;(board 10 10)&quot; &quot;(clojure.repl/pp)&quot; &quot;(mapv + [1 2] [3 4\n               ])&quot; &quot;(board 5 5)&quot; &quot;(board 5 5\n       )&quot; &quot;(def b (place b [0 0] 1\n              ))&quot; &quot;(piece b [0 0])&quot; &quot;(step :up [0 0])&quot; &quot;(step :up [1 1])&quot; &quot;(seek b [5 0] :up)&quot; &quot;(seek b [5 3\n         ] :up)&quot; &quot;(seek b [5 0] :left)&quot; &quot;(seek b [0 1] :left)&quot; &quot;get&quot; &quot;(place b 0 3 1)&quot; &quot;(place b [0 3] 1)&quot; &quot;(def  b (place b [0 3] 1))&quot; &quot;(pp)&quot; &quot;(valid-move? b [0 0] :down)&quot; &quot;(positions b)&quot; &quot;(get-at b [0 0])&quot; &quot;(get-in b [0 0])&quot; &quot;(occupied-positions b)&quot; &quot;(seek b [0 0] :rght)&quot; &quot;(seek b [0 0] :rghft)&quot; &quot;(seek b [0 0] :right)&quot; &quot;(seek b [0 1] :right)&quot; &quot;(seek b [0 4] :right)&quot; &quot;(def b (place b [0 0] 1))&quot; &quot;(def b (place b [0 3] 1))&quot; &quot;(valid-move? b [0 0] :right)&quot; &quot;(valid-move? b [0 2] :right)&quot; &quot;(valid-move? b [0 3] :right)&quot; &quot;(valid-move? b [0 3] :left)&quot; &quot;(step-forward :up [0 0])&quot; &quot;(step-forward :up nil)&quot; &quot;(remove-at b [0 0])&quot; &quot;(def b (board 10 10))&quot; &quot;(set-at b [0 0 ] 1)&quot; &quot;+&quot; &quot;(def r (move b [0 0] :right))&quot; &quot;r&quot; &quot;(remove-at b [0 3])&quot; &quot;\n\n(move b [0 0] :right)&quot; &quot;\n\n\n(move b [0 0] :right)&quot; &quot;\n\n\n(move b [0 0] :up)&quot; &quot;(conj [0 1] [])&quot; &quot;(conj []  [0 1])&quot; &quot;(goal? b)&quot; &quot;(valid-moves b)&quot; &quot;(move b [0 0] :right)&quot; &quot;(first (play b))&quot; &quot;(goal? nil)&quot; &quot;(valid-moves nil)&quot; &quot;(conj nil [])&quot; &quot;(when nil (println \&quot;hi\&quot;))&quot; &quot;(conj [] nil)&quot; &quot;(println nil)&quot; &quot;\n(play b)&quot; &quot;(def b (board 7 7))&quot; &quot;(def b (set-at [0 0] 1))&quot; &quot;(def b (set-at b [0 0] 1))&quot; &quot;(def b (set-at b [0 3] 1))&quot; &quot;(def b (set-at b [0 6] 1))&quot; &quot;(play b)&quot; &quot;(def b (remove-at [6 6\n                   ]))&quot; &quot;(def b (remove-at [6 6]))&quot; &quot;(def b (remove-at b [6 6]))&quot; &quot;(def b (remove-at b [0 6]))&quot; &quot;(def b (remove-at b [0 5]))&quot; &quot;(get-at b [0 6])&quot; &quot;(:pieces b)&quot; &quot;b&quot; &quot;(keys b)&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1463065898930">{:repl-history {:ide [], :local [&quot;false?&quot; &quot;(+)&quot; &quot;cdsf&quot; &quot;(1)&quot; &quot;(foo 1)&quot; &quot;(board 7 7)&quot; &quot;(board 1 2)&quot; &quot;(board 10 10\n       )&quot; &quot;(board 2 2\n       )&quot; &quot;(use clojure.repl)&quot; &quot;(require clojure.repl)&quot; &quot;(require 'clojure.repl)&quot; &quot;(use 'clojure.repl)&quot; &quot;(board 1 1\n       )&quot; &quot;(board 10 10)&quot; &quot;(clojure.repl/pp)&quot; &quot;(mapv + [1 2] [3 4\n               ])&quot; &quot;(board 5 5)&quot; &quot;(board 5 5\n       )&quot; &quot;(def b (place b [0 0] 1\n              ))&quot; &quot;(piece b [0 0])&quot; &quot;(step :up [0 0])&quot; &quot;(step :up [1 1])&quot; &quot;(seek b [5 0] :up)&quot; &quot;(seek b [5 3\n         ] :up)&quot; &quot;(seek b [5 0] :left)&quot; &quot;(seek b [0 1] :left)&quot; &quot;get&quot; &quot;(place b 0 3 1)&quot; &quot;(place b [0 3] 1)&quot; &quot;(def  b (place b [0 3] 1))&quot; &quot;(pp)&quot; &quot;(valid-move? b [0 0] :down)&quot; &quot;(positions b)&quot; &quot;(get-at b [0 0])&quot; &quot;(get-in b [0 0])&quot; &quot;(occupied-positions b)&quot; &quot;(seek b [0 0] :rght)&quot; &quot;(seek b [0 0] :rghft)&quot; &quot;(seek b [0 0] :right)&quot; &quot;(seek b [0 1] :right)&quot; &quot;(seek b [0 4] :right)&quot; &quot;(def b (place b [0 0] 1))&quot; &quot;(def b (place b [0 3] 1))&quot; &quot;(valid-move? b [0 0] :right)&quot; &quot;(valid-move? b [0 2] :right)&quot; &quot;(valid-move? b [0 3] :right)&quot; &quot;(valid-move? b [0 3] :left)&quot; &quot;(step-forward :up [0 0])&quot; &quot;(step-forward :up nil)&quot; &quot;(remove-at b [0 0])&quot; &quot;(def b (board 10 10))&quot; &quot;(set-at b [0 0 ] 1)&quot; &quot;+&quot; &quot;(def r (move b [0 0] :right))&quot; &quot;r&quot; &quot;(remove-at b [0 3])&quot; &quot;\n\n(move b [0 0] :right)&quot; &quot;\n\n\n(move b [0 0] :right)&quot; &quot;\n\n\n(move b [0 0] :up)&quot; &quot;(conj [0 1] [])&quot; &quot;(conj []  [0 1])&quot; &quot;(goal? b)&quot; &quot;(valid-moves b)&quot; &quot;(move b [0 0] :right)&quot; &quot;(first (play b))&quot; &quot;(goal? nil)&quot; &quot;(valid-moves nil)&quot; &quot;(conj nil [])&quot; &quot;(when nil (println \&quot;hi\&quot;))&quot; &quot;(conj [] nil)&quot; &quot;(println nil)&quot; &quot;\n(play b)&quot; &quot;(def b (board 7 7))&quot; &quot;(def b (set-at [0 0] 1))&quot; &quot;(def b (set-at b [0 0] 1))&quot; &quot;(def b (set-at b [0 3] 1))&quot; &quot;(def b (set-at b [0 6] 1))&quot; &quot;(play b)&quot; &quot;(def b (remove-at [6 6\n                   ]))&quot; &quot;(def b (remove-at [6 6]))&quot; &quot;(def b (remove-at b [6 6]))&quot; &quot;(def b (remove-at b [0 6]))&quot; &quot;(def b (remove-at b [0 5]))&quot; &quot;(get-at b [0 6])&quot; &quot;(:pieces b)&quot; &quot;b&quot; &quot;(keys b)&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -391,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1462670346801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Closer">
+      <created>1462775612343</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1462775612343</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Mostly done.">
+      <created>1462950569894</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1462950569894</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -412,7 +434,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.50555557" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50416666" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="REPL" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50416666" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -446,7 +468,8 @@
     <MESSAGE value="Got seek working" />
     <MESSAGE value="Got valid moves working" />
     <MESSAGE value="Closer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closer" />
+    <MESSAGE value="Mostly done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mostly done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2573,8 +2596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/grids/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+        <state relative-caret-position="395">
+          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
           <folding />
         </state>
       </provider>
