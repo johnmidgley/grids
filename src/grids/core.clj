@@ -91,7 +91,7 @@
 
 (defn play [board]
   (let [moves (valid-moves board)]
-    (cond (goal? board) []
+    (cond (goal? board) '()
           (empty? moves) nil
           :else
           (->> (for [m moves
@@ -100,26 +100,9 @@
                  (conj s m))
                (filter some?)
                not-empty))))
-(def b
-  (-> (board 8 7)
-      (set-at [0 3] 1)
-      (set-at [0 6] 1)
-      (set-at [3 4] 1)))
 
-#_(def b
-  (-> (board 8 7)
-      (set-at [0 0] 1)
-      (set-at [0 6] 1)
-      (set-at [2 2] 2)))
+(defn coords->board [rows cols coords]
+  (reduce #(set-at %1 %2 1) (board rows cols) coords))
 
-(def b
-  (-> (board 8 7)
-      (set-at [0 3] 1)
-      (set-at [1 1] 1)
-      (set-at [1 3] 1)
-      (set-at [2 0] 1)
-      (set-at [2 2] 1)
-      (set-at [2 6] 1)
-      (set-at [3 0] 1)
-      (set-at [3 1] 1)
-      (set-at [5 4] 1)))
+(def b (coords->board 8 7 [[0 3] [0 6] [3 4]]))
+
